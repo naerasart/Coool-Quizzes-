@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Arts Quizzzzz!</title>
+    <link rel="stylesheet" type="text/css" href="Quiz.css">
+</head>
+
+<body>
+    <style>
+        body {
+            background: rgb(255, 132, 255);
+        }
+    </style>
+    <div class=title>
+        <h1> Arts Quizzzzz!</h1>
+    </div>
+    <div class=questionBox>
+        <h1>1. The frescoes on the ceiling of the Sistine Chapel were created by:</h1>
+        <div row>
+            <button class=button id=1B onclick="QuestOneOne();QuestOneColor()">Michaelangelo</button>
+        </div>
+        <div row>
+            <button class=button id=1A onclick="QuestOneZero();QuestOneColor()">Picasso</button>
+        </div>
+        <div row>
+            <button class=button id=1C onclick="QuestOneZero();QuestOneColor()">Leonardo</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>2. The painting of the Self-Portrait with a bandaged ear is a depiction of: </h1>
+        <div row>
+            <button class=button id=2A onclick="QuestTwoZero();QuestTwoColor()">Picasso</button>
+        </div>
+        <div row>
+            <button class=button id=2B onclick="QuestTwoOne();QuestTwoColor()">Van Gogh</button>
+        </div>
+        <div row>
+            <button class=button id=2C onclick="QuestTwoZero();QuestTwoColor()"> Michaelangelo</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>3. A spanish surrealist artist known for his bizzare images is: </h1>
+        <div row>
+            <button class=button id=3A onclick="QuestThreeZero();QuestThreeColor()"> Van Gogh</button>
+        </div>
+        <div row>
+            <button class=button id=3C onclick="QuestThreeZero();QuestThreeColor()"> Leonardo</button>
+        </div>
+        <div row>
+            <button class=button id=3B onclick="QuestThreeOne();QuestThreeColor()">Salvador Dali</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>4. The Mona Lisa was painted by: </h1>
+        <div row>
+            <button class=button id=4A onclick="QuestFourZero();QuestFourColor()">Picasso</button>
+        </div>
+        <div row>
+            <button class=button id=4B onclick="QuestFourOne();QuestFourColor()">Leonardo da Vinci</button>
+        </div>
+        <div row>
+            <button class=button id=4C onclick="QuestFourZero();QuestFourColor()">Van Gogh</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>5. The famous deaf german composer is: </h1>
+        <div row>
+            <button class=button id=5B onclick="QuestFiveOne();QuestFiveColor()">Beethoven</button>
+        </div>
+        <div row>
+            <button class=button id=5A onclick="QuestFiveZero();QuestFiveColor()"> Mozart</button>
+        </div>
+        <div row>
+            <button class=button id=5C onclick="QuestFiveZero();QuestFiveColor()">Sibelius</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>6. The Magic Flute was composed by: </h1>
+        <div row>
+            <button class=button id=6C onclick="QuestSixZero();QuestSixColor()">Sibelius</button>
+        </div>
+        <div row>
+            <button class=button id=6A onclick="QuestSixZero();QuestSixColor()">Beethoven</button>
+        </div>
+        <div row>
+            <button class=button id=6B onclick="QuestSixOne();QuestSixColor()">Mozart</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>7. Swan Lake music was composed by: </h1>
+        <div row>
+            <button class=button id=7B onclick="QuestSevenOne();QuestSevenColor()">Tchaikovsky</button>
+        </div>
+        <div row>
+            <button class=button id=7A onclick="QuestSevenZero();QuestSevenColor()">Mozart</button>
+        </div>
+        <div row>
+            <button class=button id=7C onclick="QuestSevenZero();QuestSevenColor()">Beethoven</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>8. The Swan of Tuonela was composed by: </h1>
+        <div row>
+            <button class=button id=8A onclick="QuestEightZero();QuestEightColor()">Mozart</button>
+        </div>
+        <div row>
+            <button class=button id=8B onclick="QuestEightOne();QuestEightColor()">Sibelius</button>
+        </div>
+        <div row>
+            <button class=button id=8C onclick="QuestEightZero();QuestEightColor()">Tchaikovsky</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>9. A famous classical ballet company based in Moscow, Russia: </h1>
+        <div row>
+            <button class=button id=9B onclick="QuestNineOne();QuestNineColor()">The Bolshoi Ballet</button>
+        </div>
+        <div row>
+            <button class=button id=9A onclick="QuestNineZero();QuestNineColor()">The Dutch Ballet</button>
+        </div>
+        <div row>
+            <button class=button id=9C onclick="QuestNineZero();QuestNineColor()">The Royal Ballet</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>10. The father of classical ballet is: </h1>
+        <div row>
+            <button class=button id=10A onclick="QuestTenZero();QuestTenColor()">Bolshoi</button>
+        </div>
+        <div row>
+            <button class=button id=10C onclick="QuestTenZero();QuestTenColor()">Mozart</button>
+        </div>
+        <div row>
+            <button class=button id=10B onclick="QuestTenOne();QuestTenColor()">Marius Petipa</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>11. Marius Petipa is known for choreographing:</h1>
+        <div row>
+            <button class=button id=11A onclick="QuestElevenZero();QuestElevenColor()">Swan Lake</button>
+        </div>
+        <div row>
+            <button class=button id=11B onclick="QuestElevenOne();QuestElevenColor()">The Nutcracker</button>
+        </div>
+        <div row>
+            <button class=button id=11C onclick="QuestElevenZero();QuestElevenColor()">Cinderella</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>12. Alice in Wonderland was first written in 1865 by: </h1>
+        <div row>
+            <button class=button id=12B onclick="QuestTwelveOne();QuestTwelveColor()">Lewis Carroll</button>
+        </div>
+        <div row>
+            <button class=button id=12A onclick="QuestTwelveZero();QuestTwelveColor()">Shakespeare </button>
+        </div>
+        <div row>
+            <button class=button id=12C onclick="QuestTwelveZero();QuestTwelveColor()">Charles Dickens</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>13. Cinderella and Sleeping Beauty were first authored by: </h1>
+        <div row>
+            <button class=button id=13A onclick="QuestThirteenZero();QuestThirteenColor()">Shakespeare</button>
+        </div>
+        <div row>
+            <button class=button id=13B onclick="QuestThirteenOne();QuestThirteenColor()">Charles Perrault</button>
+        </div>
+        <div row>
+            <button class=button id=13C onclick="QuestThirteenZero();QuestThirteenColor()">Charles Dickens</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>14. Charles Dickens is famous for writing: </h1>
+        <div row>
+            <button class=button id=14A onclick="QuestFourteenZero();QuestFourteenColor()">Cinderella</button>
+        </div>
+        <div row>
+            <button class=button id=14C onclick="QuestFourteenZero();QuestFourteenColor()">Pinocchio</button>
+        </div>
+        <div row>
+            <button class=button id=14B onclick="QuestFourteenOne();QuestFourteenColor()">A Tale of Two Cities</button>
+        </div>
+    </div>
+    <div class=questionBox>
+        <h1>15. Great Expectations and Oliver Twist were written by: </h1>
+        <div row>
+            <button class=button id=15A onclick="QuestFifteenZero();QuestFifteenColor()">Shakespeare</button>
+        </div>
+        <div row>
+            <button class=button id=15C onclick="QuestFifteenZero();QuestFifteenColor()">Pinocchio</button>
+        </div>
+        <div row>
+            <button class=button id=15B onclick="QuestFifteenOne();QuestFifteenColor()"> Charles Dickens</button>
+        </div>
+    </div>
+    <div class=final>
+        <button id=Submit onclick="result();SubmitColor()">Submit</button>
+    </div>
+    <script src="Quiz.js"></script>
+</body>
+
+</html>
